@@ -31,3 +31,11 @@ function multiplica() {
 function subtrai() {
   resultado.value += " - ";
 }
+
+
+function atribui_valor() {
+  let bttn_num = document.querySelectorAll(".numeros>button");
+  for(x=0; x<bttn_num.length; x++) {
+    bttn_num[x].setAttribute("onClick", "adicionaNumero("+bttn_num[x].value+")");
+  }
+}
