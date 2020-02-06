@@ -1,15 +1,29 @@
-function soma(a, b) {
-  return a + b;
+let resultado = document.querySelector("#resultado");
+
+function pegaInput() {
+  return resultado.value;
 }
 
-function divide(a, b) {
-  return a / b;
+function clean() {
+  resultado.value = "";
 }
 
-function multiplica(a, b) {
-  return a * b;
+function calcula(calculo) {
+  return new Function("return " + calculo)();
 }
 
-function subtrai(a, b) {
-  return a - b;
+function soma(numero) {
+  resultado.value += " + ";
+}
+
+function divide() {
+  resultado.value += " / ";
+}
+
+function multiplica() {
+  resultado.value += " * ";
+}
+
+function subtrai() {
+  resultado.value += " - ";
 }
