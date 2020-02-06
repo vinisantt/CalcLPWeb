@@ -44,6 +44,10 @@ button {
     font-size: 18px;
 }
 
+button[name="clear"] {
+    background: lightcoral;
+}
+
 button[name="equal"] {
     background: orange;
 }
