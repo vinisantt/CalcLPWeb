@@ -12,7 +12,7 @@ function calcula(calculo) {
   return new Function("return " + calculo)();
 }
 
-function soma(numero) {
+function soma() {
   resultado.value += " + ";
 }
 
