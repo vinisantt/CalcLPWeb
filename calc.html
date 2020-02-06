@@ -4,38 +4,97 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CalcLPWeb</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
     <section id="calcMain">
-      
       <section class="resu">
-        <input type="text" placeholder="Expressão..." id="resultado">
+        <input type="text" placeholder="Expressão..." id="resultado" />
       </section>
 
       <section id="baixo">
         <section class="numeros">
-          <button name="1">1</button>
-          <button name="2">2</button>
-          <button name="3">3</button>
-          <button name="4">4</button>
-          <button name="5">5</button>
-          <button name="6">6</button>
-          <button name="7">7</button>
-          <button name="8">8</button>
-          <button name="9">9</button>
-          <button name="0">0</button>
+          <button
+            onclick="javascript:adicionaNumero(this.value)"
+            value="1"
+            name="1"
+          >
+            1
+          </button>
+          <button
+            onclick="javascript:adicionaNumero(this.value)"
+            value="2"
+            name="2"
+          >
+            2
+          </button>
+          <button
+            onclick="javascript:adicionaNumero(this.value)"
+            value="3"
+            name="3"
+          >
+            3
+          </button>
+          <button
+            onclick="javascript:adicionaNumero(this.value)"
+            value="4"
+            name="4"
+          >
+            4
+          </button>
+          <button
+            onclick="javascript:adicionaNumero(this.value)"
+            value="5"
+            name="5"
+          >
+            5
+          </button>
+          <button
+            onclick="javascript:adicionaNumero(this.value)"
+            value="6"
+            name="6"
+          >
+            6
+          </button>
+          <button
+            onclick="javascript:adicionaNumero(this.value)"
+            value="7"
+            name="7"
+          >
+            7
+          </button>
+          <button
+            onclick="javascript:adicionaNumero(this.value)"
+            value="8"
+            name="8"
+          >
+            8
+          </button>
+          <button
+            onclick="javascript:adicionaNumero(this.value)"
+            value="9"
+            name="9"
+          >
+            9
+          </button>
+          <button
+            onclick="javascript:adicionaNumero(this.value)"
+            value="0"
+            name="0"
+          >
+            0
+          </button>
         </section>
         <section class="operadores">
-          <button name="divisao">%</button>
-          <button name="multi">X</button>
-          <button name="sub">-</button>
-          <button name="soma">+</button>
-          <button name="equal">=</button>
+          <button onclick="javascript:divide()" name="divisao">%</button>
+          <button onclick="javacript:multiplica()" name="multi">X</button>
+          <button onclick="javascript: subtrai()" name="sub">-</button>
+          <button onclick="javascript:soma()" name="soma">+</button>
+          <button onclick="javascript:calcula()" name="equal">=</button>
         </section>
       </section>
-
-
     </section>
+
+    <script src="calcFunctions.js"></script>
   </body>
 </html>

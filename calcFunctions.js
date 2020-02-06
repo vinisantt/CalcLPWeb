@@ -8,8 +8,12 @@ function clean() {
   resultado.value = "";
 }
 
-function calcula(calculo) {
-  return new Function("return " + calculo)();
+function adicionaNumero(numero) {
+  resultado.value += numero;
+}
+
+function calcula() {
+  resultado.value = new Function("return " + pegaInput())();
 }
 
 function soma() {
