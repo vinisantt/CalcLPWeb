@@ -60,8 +60,12 @@ button[name="sub"], button[name="soma"], button[name="multi"], button[name="divi
     margin: 0 auto;
     display: grid;
     width: 100%;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
+    /*grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;*/
+    grid-template-areas: "num7 num8 num9"
+                         "num4 num5 num6"
+                         "num1 num2 num3"
+                         "noneh num0 nonee";
 }
 
 .operadores {
